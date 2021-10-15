@@ -20,11 +20,10 @@ fetch("https://type.fit/api/quotes")
   .then((res) => {
     quotesJSON.push(res);
     quotesJSON = quotesJSON[0];
-    console.log(quotesJSON.length);
-    for (let i = 0; i <= 500; i++) {
+    for (let i = 0; i <= 200; i++) {
       allQuotes += `
-      <div class="col-md-4 ">
-      <div class="card mt-4 hover-card" style="background-color: #030a13;border-radius: 12px;">
+      <div class="col-md-4 p-3">
+      <div class="card mt-4 hover-card h-100" style="background-color: #030a13;border-radius: 12px;">
           <div class="card-body pb-0">
 
             <h5 class="card-title text-center  text-light"><span> </span>
